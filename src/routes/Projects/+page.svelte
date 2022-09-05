@@ -10,8 +10,8 @@
 
 		let tl = gsap.timeline({});
 		tl.from('header', {
-			y: -100,
-			duration: 0.4,
+			y: -200,
+			duration: 0.6,
 			ease: 'none'
 		})
 			.from(
@@ -24,14 +24,18 @@
 				},
 				'-=.4'
 			)
-			.from('.project-box', {
-				opacity: 0,
-				y: -200,
-				duration: 0.8,
-				// scale: 0.1,
-				stagger: 0.3,
-				ease: 'Power1.out'
-			});
+			.from(
+				'.project-box',
+				{
+					opacity: 0,
+					y: -200,
+					duration: 0.8,
+					// scale: 0.1,
+					stagger: 0.3,
+					ease: 'Power1.out'
+				},
+				'-=.5'
+			);
 	});
 </script>
 

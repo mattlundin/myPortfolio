@@ -24,8 +24,8 @@
 
 		let tl = gsap.timeline({});
 		tl.from('header', {
-			y: -100,
-			duration: 0.4,
+			y: -200,
+			duration: 0.6,
 			ease: 'none'
 		})
 			.from(
@@ -60,31 +60,31 @@
 					duration: 1.8
 				},
 				'-=3'
-			);
-		gsap.from(
-			'.tech-title',
-			{
-				scrollTrigger: {
-					trigger: '.tech-title',
-					start: '10px, 85%'
+			)
+			.from(
+				'.tech-title',
+				{
+					scrollTrigger: {
+						trigger: '.tech-title',
+						start: '10px, 85%'
+					},
+					x: 400,
+					opacity: 0,
+					duration: 1.5,
+					// stagger: 0.3,
+					ease: 'Power1.out'
 				},
-				x: 400,
-				opacity: 0,
-				duration: 1.5,
-				// stagger: 0.3,
-				ease: 'Power1.out'
-			},
-			'+=3'
-		);
-		gsap.from(
-			'.img-container',
-			{
-				opacity: 0,
-				duration: 1,
-				ease: 'Power1.out'
-			},
-			'-=3'
-		);
+				'-=2.5'
+			)
+			.from(
+				'.img-container',
+				{
+					opacity: 0,
+					duration: 0.8,
+					ease: 'Power1.out'
+				},
+				'-=1.8'
+			);
 		gsap.from(
 			'.img-box',
 			{
@@ -93,10 +93,10 @@
 				duration: 0.8,
 				rotation: 90,
 				ease: 'Bounce.out',
-				stagger: 0.1
+				stagger: 0.2
 				// repeat: -1
 			},
-			'-=2.9'
+			'-=1.8'
 		);
 
 		ScrollTrigger.refresh();

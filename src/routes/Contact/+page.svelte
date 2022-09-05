@@ -10,8 +10,8 @@
 
 		let tl = gsap.timeline({});
 		tl.from('header', {
-			y: -100,
-			duration: 0.4,
+			y: -200,
+			duration: 0.6,
 			ease: 'none'
 		})
 			.from(
@@ -33,7 +33,7 @@
 					scale: 0.1,
 					ease: 'Power3.out'
 				},
-				'-=.3'
+				'-=.8'
 			)
 			.from(
 				'.fade-right',

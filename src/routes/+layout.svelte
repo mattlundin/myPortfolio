@@ -5,7 +5,7 @@
 	// export let data;
 	// export let errors;
 
-	export const prerender = true;
+	export const prerender = false;
 </script>
 
 <Nav />
