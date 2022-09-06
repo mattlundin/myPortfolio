@@ -1,1 +1,0 @@
-import{default as e}from"../components/pages/Projects/Svelte-Dictionary-App/_page.svelte-8df5a8c2.js";import"./index-3f9041d7.js";import"./ProjectDrop-fa159f5a.js";import"./gsap-7fd8d3d1.js";export{e as component};
