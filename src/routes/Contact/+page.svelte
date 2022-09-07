@@ -1,9 +1,27 @@
 <script>
 	import { onMount } from 'svelte';
 	import { gsap, ScrollTrigger } from '../../gsap.js';
+	// import { contact } from './contact.json.js';
 
 	// export let data;
 	// export let errors;
+
+	// fetch('https://formsubmit.co/ajax/matt@mattdevelops.us', {
+	// 	method: 'POST',
+	// 	headers: {
+	// 		'Content-Type': 'application/json',
+	// 		Accept: 'application/json'
+	// 	},
+	// 	body: JSON.stringify({
+	// 		firstName: '',
+	// 		lastName: '',
+	// 		email: '',
+	// 		message: ''
+	// 	})
+	// })
+	// 	.then((response) => response.json())
+	// 	.then((data) => console.log(data))
+	// 	.catch((error) => console.log(error));
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
@@ -35,26 +53,26 @@
 				},
 				'-=.8'
 			)
-			.from(
-				'.fade-right',
-				{
-					x: -200,
-					opacity: 0,
-					duration: 1,
-					ease: 'Power3.out'
-				},
-				'-=.5'
-			)
-			.from(
-				'.fade-left',
-				{
-					x: 200,
-					opacity: 0,
-					duration: 1,
-					ease: 'Power3.out'
-				},
-				'-=1'
-			)
+			// .from(
+			// 	'.fade-right',
+			// 	{
+			// 		x: -200,
+			// 		opacity: 0,
+			// 		duration: 1,
+			// 		ease: 'Power3.out'
+			// 	},
+			// 	'-=.5'
+			// )
+			// .from(
+			// 	'.fade-left',
+			// 	{
+			// 		x: 200,
+			// 		opacity: 0,
+			// 		duration: 1,
+			// 		ease: 'Power3.out'
+			// 	},
+			// 	'-=1'
+			// )
 			.from(
 				'.fade-up',
 				{
@@ -98,34 +116,31 @@
 	</p>
 
 	<div class="flex justify-center p-6 overflow-hidden">
-		<form class="w-full max-w-lg">
+		<form
+			class="w-full max-w-lg"
+			action="https://formsubmit.co/a6a18660737be7454478ebf94f7ed81b"
+			method="POST"
+			target="_blank"
+		>
 			<div class="flex flex-wrap -mx-3 mb-2">
-				<div class="fade-right w-full md:w-1/2 px-3 mb-2 md:mb-0">
-					<label class="block uppercase tracking-wide mb-2" for="grid-first-name">
-						First Name
-					</label>
-					<input
-						class="appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-lightBlue transition ease duration-200"
-						id="grid-first-name"
-						type="text"
-					/>
-				</div>
-				<div class="fade-left w-full md:w-1/2 px-3">
-					<label class="block uppercase tracking-wide mb-2" for="grid-last-name"> Last Name </label>
+				<div class="fade-up w-full px-3">
+					<label class="block uppercase tracking-wide mb-2" for="name"> Full Name </label>
 					<input
 						class="appearance-none block w-full border rounded py-3 px-4 leading-tight focus:outline-none focus:border-lightBlue transition ease duration-200"
-						id="grid-last-name"
+						id="name"
 						type="text"
+						name="name"
 					/>
 				</div>
 			</div>
-			<div class="fade-up flex flex-wrap -mx-3 mb-2">
+			<div class="fade-up flex flex-wrap -mx-3">
 				<div class="w-full px-3">
 					<label class="block uppercase tracking-widemb-2" for="grid-password"> E-mail </label>
 					<input
 						class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-lightBlue transition ease duration-200"
 						id="email"
 						type="email"
+						name="email"
 					/>
 				</div>
 			</div>
@@ -135,6 +150,8 @@
 					<textarea
 						class="appearance-none block w-full border border-darkBlue rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-lightBlue h-48 transition ease duration-200"
 						id="message"
+						name="message"
+						target="_blank"
 					/>
 				</div>
 			</div>
@@ -142,10 +159,8 @@
 				<div class="md:w-1/3">
 					<button
 						class="bg-darkBlue focus:shadow-outline focus:outline-none hover:scale-105 hover:tracking-wide shadow-md shadow-black hover:shadow-black hover:shadow-lg text-white py-2 px-4 rounded transition ease duration-200"
-						type="button"
+						type="submit">Send</button
 					>
-						Send
-					</button>
 				</div>
 				<div class="md:w-2/3" />
 			</div>
