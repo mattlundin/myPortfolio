@@ -1,7 +1,7 @@
 <script>
 	import { fade, fly, scale } from 'svelte/transition';
 	import { quintInOut, bounceInOut } from 'svelte/easing';
-	import vh from './MobileToolbar.js';
+	// import vh from './MobileToolbar.js';
 
 	let isOpen = false;
 	let isMenuRendered;
@@ -54,7 +54,7 @@
 
 	{#if isOpen}
 		<nav
-			class="fixed bottom-0 flex flex-col px-4 bg-darkBlueOpac text-offWhite h-[calc(var(--vh, 1vh) * 100 - 80px)] w-full overflow-hidden z-40"
+			class="fixed bottom-0 flex flex-col px-4 bg-darkBlueOpac text-offWhite h-[calc(100vh-80px)] w-full overflow-hidden z-40"
 			in:fly={{ delay: 0, duration: 300, x: -800 }}
 			out:fly={{ delay: 50, duration: 100, x: -800, opacity: 0 }}
 		>
