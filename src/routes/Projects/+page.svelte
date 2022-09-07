@@ -35,7 +35,11 @@
 					ease: 'Power1.out'
 				},
 				'-=.5'
-			);
+			)
+			.from('.fa-github', {
+				opacity: 0,
+				duration: 1
+			});
 	});
 </script>
 
