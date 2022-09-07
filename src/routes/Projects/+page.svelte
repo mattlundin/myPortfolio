@@ -50,7 +50,7 @@
 		<h1 class="my-auto font-rubikDirt xs:text-7xl text-6xl text-offWhite">Projects</h1>
 	</header>
 
-	<div class="projects-container flex justify-center flex-wrap pt-12 px-2 gap-8 -z-10">
+	<div class="projects-container flex justify-center flex-wrap pt-8 px-2 gap-8 -z-10">
 		<div class="project-box w-[480px] shadow-lg shadow-darkBlue cursor-pointer">
 			<a href="/Projects/ElevateLNC">
 				<img

@@ -1,27 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
 	import { gsap, ScrollTrigger } from '../../gsap.js';
-	// import { contact } from './contact.json.js';
-
-	// export let data;
-	// export let errors;
-
-	// fetch('https://formsubmit.co/ajax/matt@mattdevelops.us', {
-	// 	method: 'POST',
-	// 	headers: {
-	// 		'Content-Type': 'application/json',
-	// 		Accept: 'application/json'
-	// 	},
-	// 	body: JSON.stringify({
-	// 		firstName: '',
-	// 		lastName: '',
-	// 		email: '',
-	// 		message: ''
-	// 	})
-	// })
-	// 	.then((response) => response.json())
-	// 	.then((data) => console.log(data))
-	// 	.catch((error) => console.log(error));
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
@@ -53,26 +32,6 @@
 				},
 				'-=.8'
 			)
-			// .from(
-			// 	'.fade-right',
-			// 	{
-			// 		x: -200,
-			// 		opacity: 0,
-			// 		duration: 1,
-			// 		ease: 'Power3.out'
-			// 	},
-			// 	'-=.5'
-			// )
-			// .from(
-			// 	'.fade-left',
-			// 	{
-			// 		x: 200,
-			// 		opacity: 0,
-			// 		duration: 1,
-			// 		ease: 'Power3.out'
-			// 	},
-			// 	'-=1'
-			// )
 			.from(
 				'.fade-up',
 				{
