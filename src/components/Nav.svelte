@@ -7,7 +7,7 @@
 >
 	<div class="icon">
 		<h1
-			class="font-inspiration hover:scale-125 text-offWhite hover:text-lightBlue transition ease duration-200 text-5xl"
+			class="font-inspiration hover:scale-125 text-offWhite hover:text-lightBlue transition ease duration-200 text-5xl z-50"
 		>
 			<a href="/">ML</a>
 		</h1>

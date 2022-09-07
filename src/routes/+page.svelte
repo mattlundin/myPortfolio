@@ -103,7 +103,7 @@
 		<img src="/images/look-left-transparent.png" alt="" class="fixed bottom-0 right-0 h-56 w-56" />
 	</div>
 	<div class="block md:hidden absolute bottom-0 right-0">
-		<img src="/images/look-up-transparent.png" alt="" class="fixed bottom-0 right-0 h-56 w-56" />
+		<img src="/images/look-up-transparent.png" alt="" class="fixed bottom-0 right-0 h-44 w-44" />
 	</div>
 
 	<div class="relative sm:ml-12 ml-4 mt-12">
