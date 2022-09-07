@@ -36,8 +36,8 @@
 				},
 				'-=.5'
 			)
-			.from('.fa-github', {
-				opacity: 0,
+			.to('.fa-github', {
+				opacity: 1,
 				duration: 1
 			});
 	});
@@ -95,7 +95,7 @@
 	<div class="mt-24 text-6xl text-center text-darkBlue">
 		<a href="https://github.com/mattlundin"
 			><i
-				class="fa-brands fa-github hover:text-lightBlue hover:scale-125 hover:rotate-180 transition ease duration-300"
+				class="opacity-0 fa-brands fa-github hover:text-lightBlue hover:scale-125 hover:rotate-180 transition ease duration-300"
 			/></a
 		>
 	</div>
