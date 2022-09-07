@@ -158,7 +158,7 @@
 				What I'm Currently Working With
 			</h2>
 			<div
-				class="img-container flex flex-wrap justify-around items-center h-full m-4 p-6 gap-4 bg-darkBlue rounded-lg shadow-xl shadow-black overflow-hidden"
+				class="img-container flex flex-wrap justify-around items-center h-full m-4 py-6 gap-4 bg-darkBlue rounded-lg shadow-xl shadow-black overflow-hidden"
 			>
 				{#each technologies as { img, alt, css }}
 					<div class="img-box h-32 w-32 p-1 shadow-sm shadow-black">
