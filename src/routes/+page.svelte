@@ -6,9 +6,10 @@
 	// export let errors;
 
 	onMount(() => {
-		gsap.from('.slide-right', {
-			opacity: 0,
-			x: -300,
+		gsap.to('.slide-right', {
+			opacity: 1,
+			// x: 0,
+			marginLeft: 0,
 			duration: 1.2,
 			stagger: 0.5,
 			ease: 'back.out(4.7)'
@@ -92,10 +93,10 @@
 
 <main class="h-[calc(100vh-80px)] overflow-hidden">
 	<div class="name pt-12 xs:pl-12 pl-4">
-		<p class="slide-right sm:text-8xl text-7xl text-darkBlue">
+		<p class="slide-right opacity-0 ml-[-300px] sm:text-8xl text-7xl text-darkBlue">
 			<span class="fade-in sm:text-[160px] text-[140px] text-medBlue font-inspiration">M</span>ATT
 		</p>
-		<p class="slide-right sm:text-8xl text-7xl text-darkBlue">
+		<p class="slide-right opacity-0 ml-[-300px] sm:text-8xl text-7xl text-darkBlue">
 			<span class="fade-in sm:text-[160px] text-[140px] text-medBlue font-inspiration">L</span>UNDIN
 		</p>
 	</div>
