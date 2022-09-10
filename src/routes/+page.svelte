@@ -48,6 +48,13 @@
 				},
 				'-=2.8'
 			)
+			.to(
+				'.title-hidden',
+				{
+					opacity: 1
+				},
+				'-=3.5'
+			)
 			.from(
 				'.down',
 				{
@@ -113,7 +120,7 @@
 		>
 			CR<span class="text-darkBlue">E</span>AT<span class="text-darkBlue">I</span>VE
 		</div>
-		<div class="absolute flex xs:text-5xl text-3xl">
+		<div class="title-hidden opacity-0 absolute flex xs:text-5xl text-3xl">
 			<div class="front-end flex flex-row">
 				<div class="front flex flex-row mr-3">
 					<div class="grow">F</div>
