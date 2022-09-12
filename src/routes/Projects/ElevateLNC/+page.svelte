@@ -9,7 +9,7 @@
 	projectName="Elevate LNC"
 	projectImg="/images/ElevateLNC.webp"
 	projectImgAlt="Elevate LNC"
-	projectDescription="This website was built using HTML, CSS, JavaScript, and GSAP. There were numerous changes throughout this project which were both rewarding and challenging. One of my highlights with this site was diving deep into the SEO, especially when the blog section was incorporated. Since building this website the client has decided to get away from hosting so unfortunately what I built only lives on in my repository at this moment."
+	projectDescription="This website was built using HTML, CSS, JavaScript, and GSAP. There were numerous changes throughout this project which were both rewarding and challenging. One of my highlights with this site was diving deep into the SEO, especially when the blog section was incorporated. Recently the client has stopped her hosting so unfortunately what I built only lives on in my repository at this moment."
 	projectURL="https://mattlundin.github.io/ElevateLNC/home"
 	projectGitHub="https://github.com/mattlundin/ElevateLNC"
 />
