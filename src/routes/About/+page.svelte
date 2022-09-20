@@ -61,21 +61,21 @@
 				},
 				'-=3'
 			)
-			.from(
-				'.tech-title',
-				{
-					scrollTrigger: {
-						trigger: '.tech-title',
-						start: '10px, 85%'
-					},
-					x: 400,
-					opacity: 0,
-					duration: 1.5,
-					// stagger: 0.3,
-					ease: 'Power1.out'
-				},
-				'-=2.5'
-			)
+			// .from(
+			// 	'.tech-title span',
+			// 	{
+			// 		scrollTrigger: {
+			// 			trigger: '.tech-title',
+			// 			start: '10px, 85%'
+			// 		},
+			// 		x: 400,
+			// 		opacity: 0,
+			// 		duration: 0.5,
+			// 		stagger: 0.2,
+			// 		ease: 'back.out'
+			// 	},
+			// 	'-=3.5'
+			// )
 			.from(
 				'.img-container',
 				{
@@ -85,6 +85,21 @@
 				},
 				'-=1.8'
 			);
+		gsap.from(
+			'.tech-title span',
+			{
+				scrollTrigger: {
+					trigger: '.tech-title',
+					start: '10px, 85%'
+				},
+				x: 400,
+				opacity: 0,
+				duration: 0.5,
+				stagger: 0.2,
+				ease: 'back.out'
+			},
+			'-=3.5'
+		);
 		gsap.from(
 			'.img-box',
 			{
@@ -109,7 +124,7 @@
 
 <main class="h-full min-h-[calc(100vh-80px)] max-w-screen-2xl mx-auto">
 	<header
-		class="flex justify-center items-center md:mx-auto mx-3 mb-24 h-36 max-w-3xl bg-darkBlue rounded-b-3xl border-none -z-10 shadow-xl overflow-hidden"
+		class="flex justify-center items-center text-center md:mx-auto mx-3 mb-24 h-36 max-w-3xl bg-darkBlue rounded-b-3xl border-none -z-10 shadow-xl overflow-hidden"
 	>
 		<h1 class="my-auto font-rubikDirt xs:text-7xl text-6xl text-offWhite">About Me</h1>
 	</header>
@@ -155,7 +170,11 @@
 		</div>
 		<div class="md:w-1/2 h-full w-full pb-12">
 			<h2 class="tech-title flex justify-center flex-row flex-wrap text-center text-3xl">
-				What I'm Currently Working With
+				<span>What</span>&nbsp;
+				<span>I'm</span>&nbsp;
+				<span>Currently</span>&nbsp;
+				<span>Working</span>&nbsp;
+				<span>With</span>
 			</h2>
 			<div
 				class="img-container flex flex-wrap justify-around items-center h-full my-4 p-6 gap-4 bg-darkBlue rounded-lg shadow-xl shadow-black overflow-hidden"

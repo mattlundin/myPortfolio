@@ -1,3 +1,4 @@
 {
-	"cSpell.words": ["esbuild", "myportfolio", "Opac", "precompress"]
+	"cSpell.words": ["esbuild", "myportfolio", "Opac", "precompress"],
+	"liveServer.settings.port": 5501
 }
