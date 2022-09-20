@@ -83,7 +83,7 @@
 					duration: 0.8,
 					ease: 'Power1.out'
 				},
-				'-=1.8'
+				'-=2.8'
 			);
 		gsap.from(
 			'.tech-title span',
@@ -93,12 +93,14 @@
 					start: '10px, 85%'
 				},
 				x: 400,
+				color: 'rgba(0,0,0,0.1)',
 				opacity: 0,
-				duration: 0.5,
+				duration: 2,
+				// delay: 1,
 				stagger: 0.2,
 				ease: 'back.out'
 			},
-			'-=3.5'
+			'-=2.5'
 		);
 		gsap.from(
 			'.img-box',

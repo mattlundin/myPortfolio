@@ -68,8 +68,8 @@
 	</header>
 
 	<p class="fade-down text-center max-w-screen-lg mx-auto pb-5 md:px-10 px-4 -z-40">
-		Have a project or opportunity you want to present? Please feel free to reach out via the contact
-		form or email me directly: <a href="mailto:matt@mattdevelops.us" class="text-medBlue"
+		Have a project or opportunity you want to present? Please feel free to reach out through the
+		contact form or email me directly: <a href="mailto:matt@mattdevelops.us" class="text-medBlue"
 			>matt@mattdevelops.us</a
 		>
 	</p>
