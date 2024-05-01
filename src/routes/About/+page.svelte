@@ -150,8 +150,7 @@
 
 			<div class="fade-in">
 				<p class="mb-2">
-					My name is Matt and I am a Front End Developer living in Texas. I have been developing for
-					over 2 years and during that time, I have created quite an obsession with animations and
+					My name is Matt and I am a Front End Developer living in Texas. During my time developing I have created quite an obsession with animations and
 					transitions. I believe giving projects that extra little finesse can make the biggest
 					difference to help keep visitor's attention where it should be, the site they're visiting.
 				</p>
